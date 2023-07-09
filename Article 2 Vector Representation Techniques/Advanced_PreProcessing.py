@@ -24,8 +24,8 @@ clean_tokens = [token for token in text_tokens if not token in stop_words]
 
 # Get root of words
 if root_technique == "Lemmatization":
-  root_tokens = [lemmatizer.lemmatize(token) for token in clean_tokens]
+   root_tokens = [lemmatizer.lemmatize(token) for token in clean_tokens]
 elif root_technique == "Stemming":
-  root_tokens = [stemmer.stem(token) for token in clean_tokens]
+    root_tokens = [stemmer.stem(token) for token in clean_tokens]
 
 clean_text = " ".join(root_tokens)

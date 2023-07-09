@@ -1,6 +1,6 @@
-Import re
+import re
 
-input_text = "Wooden Table"
+input_text = "Wooden Table https://github.com/shubhbrth/ -*/"
 #   Convert the text to Lowercase (wooden <--SAME--> Wooden)
 text = input_text.lower()
 #   Remove if any URL Present
